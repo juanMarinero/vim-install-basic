@@ -1,0 +1,8 @@
+{
+  "tagname-lowercase": false,
+  "tag-pair": true,
+  "attr-value-double-quotes": true,
+  "attr-value-not-empty": true,
+  "id-unique": true,
+  "space-tab-mixed-disabled": "space4"
+}

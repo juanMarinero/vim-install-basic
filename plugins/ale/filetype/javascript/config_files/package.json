@@ -1,0 +1,18 @@
+{
+  "devDependencies": {
+    "@eslint/js": "^9.21.0",
+    "eslint": "^9.21.0",
+    "eslint-config-prettier": "^10.0.2",
+    "eslint-plugin-prettier": "^5.2.3",
+    "fixjson": "^1.1.2",
+    "htmlhint": "^1.1.4",
+    "jsonlint": "^1.6.3",
+    "prettier": "^3.5.3",
+    "rustywind": "^0.24.0",
+    "standard": "^17.1.2",
+    "stylelint": "^16.15.0",
+    "stylelint-config-standard": "^37.0.0",
+    "stylelint-config-standard-scss": "^14.0.0",
+    "yarn": "^1.22.22"
+  }
+}

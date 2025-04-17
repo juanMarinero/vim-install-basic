@@ -1,0 +1,21 @@
+{
+  "sortOrder": [
+    "container",
+    "mx-auto",
+    "flex",
+    "items-center",
+    "justify-center",
+    "bg-",
+    "text-",
+    "p-",
+    "m-",
+    "border-",
+    "rounded-",
+    "hover:",
+    "focus:",
+    "active:",
+    "transition-",
+    "duration-",
+    "ease-"
+  ]
+}

@@ -1,0 +1,19 @@
+[tool.black]
+# Maximum allowed line length for the entirety of this run. (Default: 79)
+line-length = 79
+[tool.autoflake]
+check = true
+imports = ["django", "requests", "urllib3"]
+[tool.autoimport.common_statements]
+"np" = "import numpy as np"
+[tool.isort]
+profile = "black"
+[tool.mypy]
+warn_return_any = true
+[tool.refurb]
+sort_by = "filename"
+[tool.ruff]
+line-length = 79
+[tool.vulture]
+exclude = ["*vulture_excluded*.py", "dir/"]
+verbose = true

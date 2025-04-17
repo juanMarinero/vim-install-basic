@@ -1,0 +1,4 @@
+// sample config file for HTML tidy
+// https://api.html-tidy.org/tidy/tidylib_api_next/tidy_config.html
+indent: auto
+indent-spaces: 4

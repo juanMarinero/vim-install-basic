@@ -222,6 +222,8 @@ vim -c "call vimspector#SetLineBreakpoint('main.py',13,{ 'condition': 'i == 3 or
     main.py
 ```
 
+See [video](https://github.com/juanMarinero/vim-install-basic/raw/refs/heads/main/videos/MWE_Python.mp4).
+
 In Viminspector execute step-ins (`:call vimspector#StepInto()`), continues (`:call vimspector#Continue()`),... Observe how conditional breakpoints pause it at `i` 3 and 7.
 
 ### <a id="MWE-JS"></a></> JS

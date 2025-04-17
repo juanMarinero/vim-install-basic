@@ -287,7 +287,8 @@ Previous command `:call vimspector#Launch()` opens the respective adapter-browse
 - Run for example the command `calculate(5,1)`:
   - Opt. A: in the console window of Vimspector run (to insert text press 'i'): `calculate(5,1)`
   - Opt. B: in browser's console (Open Web-Developer-Tools with Ctrl+Shift+I and go to tab *Console*) run `calculate(5,1)`
-  - Opt. C: in browser click the HTML button that says `Click Me to calculate(5,1)`
+  - Opt. C: in browser click the HTML button that says `Click Me to calculate(5,1)`. See [video](https://github.com/juanMarinero/vim-install-basic/raw/refs/heads/main/videos/MWE_JS.mp4).
+
 
 In Viminspector execute step-ins (`:call vimspector#StepInto()`), continues (`:call vimspector#Continue()`),... observe how variables `a`, `b` and `i` evolve.
 

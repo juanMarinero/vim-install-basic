@@ -1,0 +1,17 @@
+# $ pre-commit install # to install
+# $ pre-commit install --install-hooks --overwrite # if this file is modified
+
+repos:
+-   repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v2.3.0
+    hooks:
+    -   id: check-yaml
+    -   id: end-of-file-fixer
+    -   id: trailing-whitespace
+-   repo: local
+    hooks:
+    -   id: hook-ggshield
+        name: hook-ggshield
+        entry: .git/hooks/hook-ggshield.sh
+        language: script
+        stages: [pre-commit]

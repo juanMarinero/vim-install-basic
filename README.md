@@ -274,7 +274,8 @@ nohup python3 -m http.server 1234 > /dev/null 2>&1 & # Serving HTTP on 0.0.0.0 p
 ss -tulnp | grep 1234 # Check
 
 # Note: breakpoint at line 27 to watch variable values of last loop iter
-vim -c "call vimspector#SetLineBreakpoint(expand('%'), 24)" \
+vim -c "ALEToggle" \
+    -c "call vimspector#SetLineBreakpoint(expand('%'), 24)" \
     -c "call vimspector#SetLineBreakpoint(expand('%'), 27)" \
     -c "call vimspector#Launch()" \
     -c "VimspectorWatch a | VimspectorWatch b | VimspectorWatch i" \

@@ -12,9 +12,11 @@ sudo apt purge neovim -y
 sudo apt autoremove -y
 
 # Binary uninstall
-cd ~/neovim \
-  && sudo cmake --build build/ --target uninstall \
-  && cd -
+if [ -d $HOME/neovim ]; then
+  cd ~/neovim \
+    && sudo cmake --build build/ --target uninstall
+  cd -
+fi
 
 # Purge remaining folders
 sudo rm -rv "$(whereis nvim)" || echo "Already removed"

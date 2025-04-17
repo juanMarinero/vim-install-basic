@@ -9,9 +9,11 @@ sudo apt-get purge --auto-remove -y vim-gtk3
 sudo apt autoremove -y
 
 # Binary uninstall
-cd ~/vim/src \
-  && sudo make uninstall \
-  && cd -
+if [ -d $HOME/vim/src ]; then
+  cd ~/vim/src \
+    && sudo make uninstall
+  cd -
+fi
 
 # Purge remaining folders
 sudo rm -rv "$(whereis vim)" || echo "Already removed"

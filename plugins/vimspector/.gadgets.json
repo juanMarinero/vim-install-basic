@@ -1,0 +1,111 @@
+{
+  "adapters": {
+    "CodeLLDB": {
+      "command": [
+        "${gadgetDir}/CodeLLDB/adapter/codelldb"
+      ],
+      "configuration": {
+        "args": [],
+        "cargo": {},
+        "cwd": "${workspaceRoot}",
+        "env": {},
+        "name": "lldb",
+        "terminal": "integrated",
+        "type": "lldb"
+      },
+      "name": "CodeLLDB",
+      "type": "CodeLLDB"
+    },
+    "chrome": {
+      "command": [
+        "node",
+        "${gadgetDir}/debugger-for-chrome/out/src/chromeDebug.js"
+      ],
+      "name": "debugger-for-chrome",
+      "type": "chrome"
+    },
+    "debugpy": {
+      "command": [
+        "${workspaceRoot}/venv/bin/python3",
+        "${gadgetDir}/debugpy/build/lib/debugpy/adapter"
+      ],
+      "configuration": {
+        "python": "${workspaceRoot}/venv/bin/python3"
+      },
+      "custom_handler": "vimspector.custom.python.Debugpy",
+      "name": "debugpy"
+    },
+    "firefox": {
+      "command": [
+        "node",
+        "${gadgetDir}/vscode-firefox-debug/dist/adapter.bundle.js"
+      ],
+      "name": "debugger-for-firefox",
+      "type": "firefox"
+    },
+    "js-debug": {
+      "command": [
+        "node",
+        "${gadgetDir}/vscode-js-debug/js-debug/src/dapDebugServer.js",
+        "${port}",
+        "127.0.0.1"
+      ],
+      "configuration": {
+        "console": "integratedTerminal",
+        "type": "pwa-node"
+      },
+      "custom_handler": "vimspector.custom.js.JsDebug",
+      "host": "127.0.0.1",
+      "port": "${port}",
+      "variables": {
+        "port": "${unusedLocalPort}"
+      }
+    },
+    "multi-session": {
+      "host": "${host}",
+      "port": "${port}"
+    },
+    "vscode-bash": {
+      "command": [
+        "node",
+        "${gadgetDir}/vscode-bash-debug/out/bashDebug.js"
+      ],
+      "configuration": {
+        "args": [],
+        "argsString": "",
+        "cwd": "${workspaceRoot}",
+        "env": {},
+        "pathBash": "bash",
+        "pathBashdb": "${BASHDB_HOME}/bashdb",
+        "pathBashdbLib": "${BASHDB_HOME}",
+        "pathCat": "cat",
+        "pathMkfifo": "mkfifo",
+        "pathPkill": "pkill",
+        "program": "${file}",
+        "request": "launch",
+        "terminalKind": "integrated",
+        "type": "bashdb"
+      },
+      "name": "bashdb",
+      "variables": {
+        "BASHDB_HOME": "${gadgetDir}/vscode-bash-debug/bashdb_dir"
+      }
+    },
+    "vscode-cpptools": {
+      "attach": {
+        "pidProperty": "processId",
+        "pidSelect": "ask"
+      },
+      "command": [
+        "${gadgetDir}/vscode-cpptools/debugAdapters/bin/OpenDebugAD7"
+      ],
+      "configuration": {
+        "args": [],
+        "cwd": "${workspaceRoot}",
+        "environment": [],
+        "type": "cppdbg"
+      },
+      "name": "cppdbg"
+    }
+  }
+}

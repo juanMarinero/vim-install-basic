@@ -1,0 +1,24 @@
+{
+  "$schema": "https://github.com/puremourning/vimspector/blob/master/support/test/python/simple_python/.vimspector.json",
+  "configurations": {
+    "run": {
+      "adapter": "debugpy",
+      "configuration": {
+        "request": "launch",
+        "type": "python",
+        "python": "${workspaceRoot}/venv/bin/python",
+        "cwd": "${workspaceRoot}",
+        "program": "${file}",
+        "stopOnEntry": true,
+        "console": "integratedTerminal"
+      },
+      "breakpoints": {
+        "exception": {
+          "raised": "N",
+          "uncaught": "",
+          "userUnhandled": ""
+        }
+      }
+    }
+  }
+}

@@ -58,6 +58,8 @@ vim -c "source plugins/vimspector/postinstall.vim"       # takes a while, check 
 source plugins/vimspector/postinstall.sh
 ```
 
+See [video](https://github.com/juanMarinero/vim-install-basic/raw/refs/heads/main/videos/VimInstallationStep3.mp4).
+
 Other purposes:
 - To get familiar with Neo-/Vim and its most used plugins directly, not worrying about installation nor settings
 - Modular Neo-/Vim config and install files:

@@ -166,7 +166,7 @@ vim +PlugInstall
 vim -c "source plugins/$plugin/postinstall.vim"
 ```
 
-Note coc.nvim has several postinstall scripts to run in vim or shell. See [plugins/coc.nvim/README.md](./plugins/coc.nvim).
+Note coc.nvim has several postinstall scripts to run in vim or shell. See [plugins/coc.nvim](./plugins/coc.nvim).
 
 ## Minimal Working Examples
 

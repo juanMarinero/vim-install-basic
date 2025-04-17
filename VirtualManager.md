@@ -1,11 +1,11 @@
 * [Install VirtualBox](#install-virtualbox)
-* [Install Ubuntu 24.04 Virtual Machine](#install-ubuntu-24.04-virtual-machine)
+* [Install Ubuntu in a Virtual Machine](#install-ubuntu-in-a-virtual-machine)
 * [Guest Additions](#guest-additions)
   * [Install Guest Additions](#install-guest-additions)
   * [Enable Clipboard](#enable-clipboard)
   * [Set Screen Resolution](#set-screen-resolution)
   * [Shared Folder](#shared-folder)
-* [Bonus. VirtualBox: How to Use Snapshots](#bonus.-virtualbox:-how-to-use-snapshots)
+* [Bonus - How to Use Snapshots](#bonus---how-to-use-snapshots)
 
 ## Install VirtualBox
 
@@ -35,7 +35,7 @@ Alternative installation using Oracle’s repository at [itsfoss](https://itsfos
 
 Official [docs](https://www.virtualbox.org/manual/topics/installation.html#install-linux-host) and quick [wiki](https://www.virtualbox.org/wiki/Linux_Downloads) for Ubuntu/Debian.
 
-## Install Ubuntu 24.04 Virtual Machine
+## Install Ubuntu in a Virtual Machine
 
 1. Download an Ubuntu ISO file from https://ubuntu.com/download/desktop
 
@@ -73,7 +73,7 @@ sudo apt install -y build-essential dkms linux-headers-$(uname -r)
 ```
 
 In VirtualBox interface:
-1. Go to *Devices* menu at the top of the virtual machine window 
+1. Go to *Devices* menu at the top of the virtual machine window
 2. Select *Insert Guest Additions CD Image.* This action virtually mount the Guest Additions CD image into your virtual machine.
 
 In VM terminal install the additions
@@ -89,7 +89,7 @@ After reboot verify installation
 lsmod | grep vbox
 ```
 
-2. Check automatic screen resizing and seamless mouse integration. 
+2. Check automatic screen resizing and seamless mouse integration.
 ![Screen Resize Post VirtualBox Guest Addition](https://www.linuxtechi.com/wp-content/uploads/2023/09/Screen-Resize-Post-VirtualBox-Guest-Addition.gif)
 
 <p style="text-align: right;">
@@ -152,12 +152,12 @@ sudo chmod 755 /media/host_VM_sharedDir
 ```
 
 Still troubles? See virtualbox-docs concerning:
-- [Sharedfolders](https://www.virtualbox.org/manual/topics/guestadditions.html#sharedfolders) 
+- [Sharedfolders](https://www.virtualbox.org/manual/topics/guestadditions.html#sharedfolders)
 - [Guest additions](https://www.virtualbox.org/manual/topics/guestadditions.html#guestadditions)
 - [Linux guest additions](https://www.virtualbox.org/manual/topics/guestadditions.html#additions-linux-install)
 - Or ask on [r/virtualbox subreddit](https://www.reddit.com/r/virtualbox/).
 
 
-## Bonus. VirtualBox: How to Use Snapshots 
+## Bonus - How to Use Snapshots
 
 Excellent Corey Schafer [video](https://www.youtube.com/watch?v=Qte4X-rdr2Q).

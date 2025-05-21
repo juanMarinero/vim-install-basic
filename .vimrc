@@ -86,7 +86,7 @@ if has('nvim')
   Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/remote', 'do': ':UpdateRemotePlugins' }
   " If error
   "  1. Run in terminal:     NVIM_PYTHON_LOG_FILE=/tmp/nvim_python.log nvim
-  "  2. In NeoVim run:       :FzfPreviewProjectFiles
+  "  2. In NeoVim run:       :FzfPreviewLines
   "  3. In new terminal run: cat /tmp/nvim_python.log # check errors
 else
   Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc' }

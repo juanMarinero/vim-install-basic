@@ -16,6 +16,7 @@
   * [General](#general)
   * [🐍 Python](#TODOs-Python)
   * [</> WebDev](#TODOs-WebDev)
+* [Contribute](#contribute)
 * [License](#license)
 
 ## Purpose
@@ -344,6 +345,34 @@ Do **not** run `sudo -E install/install.sh` ( nor `sudo -E`), just run `install/
 ### <a id="TODOs-WebDev"></a></> WebDev
 - Add JS-HTML-CSS-live-preview [turbio/bracey.vim](https://github.com/turbio/bracey.vim/)
 - Add an abbreviation expander [emmet-vim](https://github.com/mattn/emmet-vim)
+
+
+## Contribute
+
+Install a Python3 version compatible `ghook` and `pre-commit`
+
+```sh
+# https://github.com/pyenv/pyenv-virtualenv#usage
+py_vers="3.10.12"
+pyenv install "$py_vers"
+pyenv virtualenv "$py_vers" # create venv
+pyenv version # check
+```
+
+Install Python dependencies
+
+```sh
+pip install -r requirements.txt
+```
+
+Install hooks
+
+```sh
+pre-commit install
+```
+
+Pull requests are welcome.
+
 
 ## License
 GNU General Public License. **GPLv3** or newer.

@@ -1,3 +1,12 @@
+<div align="center">
+  <a href="https://github.com/juanMarinero/vim-install-basic?tab=GPL-3.0-1-ov-file"><img src="https://img.shields.io/github/license/juanMarinero/vim-install-basic" alt="License"></a>
+  <img src="https://img.shields.io/badge/-Vim-019733?logo=vim&logoColor=white" alt="Vim">
+  <img src="https://img.shields.io/badge/-Neovim-57A143?logo=neovim&logoColor=white" alt="NeoVim">
+  <img src="https://img.shields.io/badge/Ubuntu-E95420?logo=ubuntu&logoColor=white" alt="Ubuntu">
+  <a href="https://github.com/juanMarinero/vim-install-basic/graphs/contributors"><img src="https://img.shields.io/github/contributors/juanMarinero/vim-install-basic" alt="Contributors"></a>
+  <a href="https://github.com/juanMarinero/vim-install-basic/stargazers"><img src="https://img.shields.io/github/stars/juanMarinero/vim-install-basic?style=flat" alt="Stars"></a>
+</div>
+<br/>
 
 * [Purpose](#purpose)
 * [What is this](#what-is-this)

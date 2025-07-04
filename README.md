@@ -8,6 +8,9 @@
 </div>
 <br/>
 
+<details>
+  <summary><strong>Index</strong> - Click to expand</summary>
+
 * [Purpose](#purpose)
 * [What is this](#what-is-this)
 * [What is NOT](#what-is-not)
@@ -27,6 +30,8 @@
   * [</> WebDev](#TODOs-WebDev)
 * [Contribute](#contribute)
 * [License](#license)
+
+</details>
 
 ## Purpose
 - Out of the box installation of Neo-/Vim and its most popular plugins for **Ubuntu** users. Just run these steps:
